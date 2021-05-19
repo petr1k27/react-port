@@ -3,11 +3,11 @@ import Poster from "./Poster/Poster";
 import Description from "./Description/Description";
 import Cast from "./Cast/Cast";
 
-const FilmDescription = () => {
+const FilmDescription = (props) => {
     return (
         <div className={s.description}>
             <Poster />
-            <Description />
+            <Description {...props}/>
             <Cast />
         </div>
     )

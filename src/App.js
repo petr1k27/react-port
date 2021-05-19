@@ -1,12 +1,12 @@
 import './App.css';
 import Search from "./components/Search/Search";
-import FilmDescription from "./components/FilmDescription/FilmDescription";
+import FilmDescriptionContainer from "./components/FilmDescription/FilmDescriptionContainer";
 
 function App() {
   return (
       <div className="app-wrapper">
           <Search />
-          <FilmDescription />
+          <FilmDescriptionContainer />
       </div>
       );
 }
