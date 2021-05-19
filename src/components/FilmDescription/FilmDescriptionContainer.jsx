@@ -1,10 +1,15 @@
 import React from "react";
 import FilmDescription from "./FilmDescription";
 import {connect} from "react-redux";
+import {getFilmInfo} from "../../redux/search-reducer";
 
 class FilmDescriptionContainer extends React.Component {
+
+    componentDidMount() {
+        this.props.getFilmInfo('Tron: Legacy');
+    }
+
     render() {
-        debugger;
         return (
             <FilmDescription {...this.props}/>
         )
@@ -17,4 +22,4 @@ let mapStateToProps = (state) => (
     }
 )
 
-export default connect(mapStateToProps, {})(FilmDescriptionContainer);
+export default connect(mapStateToProps, {getFilmInfo} )(FilmDescriptionContainer);

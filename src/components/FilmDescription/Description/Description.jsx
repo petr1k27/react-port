@@ -12,19 +12,19 @@ const Description = (props) => {
             <div>Language: {props.filmInfo.Language}</div>
             <div>Country: {props.filmInfo.Country}</div>
             <div>Awards: {props.filmInfo.Awards}</div>
-            <ul>Ratings:
-                <li>Source: {props.filmInfo.Ratings[0].Source},
-                    Value: {props.filmInfo.Ratings[0].Value}
-                </li>
-                <li>
-                    Source: {props.filmInfo.Ratings[1].Source},
-                    Value: {props.filmInfo.Ratings[1].Value}
-                </li>
-                <li>
-                    Source: {props.filmInfo.Ratings[2].Source},
-                    Value: {props.filmInfo.Ratings[2].Value}
-                </li>
-            </ul>
+            {/*<ul>Ratings:*/}
+            {/*    <li>Source: {props.filmInfo.Ratings[0].Source},*/}
+            {/*        Value: {props.filmInfo.Ratings[0].Value}*/}
+            {/*    </li>*/}
+            {/*    <li>*/}
+            {/*        Source: {props.filmInfo.Ratings[1].Source},*/}
+            {/*        Value: {props.filmInfo.Ratings[1].Value}*/}
+            {/*    </li>*/}
+            {/*    <li>*/}
+            {/*        Source: {props.filmInfo.Ratings[2].Source},*/}
+            {/*        Value: {props.filmInfo.Ratings[2].Value}*/}
+            {/*    </li>*/}
+            {/*</ul>*/}
             <div>Metascore: {props.filmInfo.Metascore}</div>
             <div>imdbRating: {props.filmInfo.imdbRating}</div>
             <div>imdbVotes: {props.filmInfo.imdbVotes}</div>
