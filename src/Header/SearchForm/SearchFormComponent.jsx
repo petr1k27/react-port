@@ -5,9 +5,9 @@ const SearchForm = (props) => {
     return (
         <form onSubmit={props.handleSubmit}>
             <Field name={'filmTitle'} component={'input'} placeholder={'Find a ..'}/>
-            <div>
-                <button>Add post</button>
-            </div>
+            <span>
+                <button>Find</button>
+            </span>
         </form>
 
     )

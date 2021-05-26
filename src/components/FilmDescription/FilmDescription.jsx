@@ -8,7 +8,7 @@ const FilmDescription = (props) => {
         <div className={s.description}>
             <Poster />
             <Description {...props}/>
-            <Cast />
+            <Cast actors={props.filmInfo.Actors}/>
         </div>
     )
 }

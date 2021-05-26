@@ -16,20 +16,6 @@ let initialState =  {
         Country: null,
         Awards: null,
         Poster: null,
-        Ratings: [
-            {
-                Source: null,
-                Value: null
-            },
-            {
-                Source: null,
-                Value: null
-            },
-            {
-                Source: null,
-                Value: null
-            }
-        ],
         Metascore: null,
         imdbRating: null,
         imdbVotes: null,

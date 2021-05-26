@@ -1,12 +1,16 @@
-const Cast = () => {
+const Cast = (props) => {
     return (
         <div>
+            {props.actors &&
             <ul>Actors:
-                <li>Jeff Bridges</li>
-                <li>Bruce Boxleitner</li>
-                <li>David Warner</li>
-                <li>Cindy Morgan"</li>
+                {props.actors.split(',').map(a => <li>{a}</li>)}
             </ul>
+            }
+            {!props.actors &&
+            <ul>Actors:
+
+            </ul>
+            }
         </div>
     )
 }
