@@ -6,7 +6,7 @@ const instance = axios.create({
 })
 
 export const OMDBApi = {
-    getFilmInfo(title = "tron") {
+    getFilmInfo(title = "interstellar") {
         return instance.get(`?apikey=98128e08&t=${title}`).then(response => {
             return response.data;
         })

@@ -6,7 +6,7 @@ import {getFilmInfo} from "../../redux/search-reducer";
 class FilmDescriptionContainer extends React.Component {
 
     componentDidMount() {
-        this.props.getFilmInfo('Tron: Legacy');
+        this.props.getFilmInfo();
     }
 
     render() {

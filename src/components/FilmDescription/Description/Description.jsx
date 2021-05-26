@@ -1,40 +1,92 @@
+import s from './Description.module.css'
+
 const Description = (props) => {
     return (
-        <div>
-            <div>Title: {props.filmInfo.Title}</div>
-            <div>Year: {props.filmInfo.Year}</div>
-            <div>Rated: {props.filmInfo.Rated}</div>
-            <div>Released: {props.filmInfo.Released}</div>
-            <div>Runtime: {props.filmInfo.Runtime}</div>
-            <div>Genre: {props.filmInfo.Genre}</div>
-            <div>Director: {props.filmInfo.Director},</div>
-            <div>Writer: {props.filmInfo.Writer}</div>
-            <div>Language: {props.filmInfo.Language}</div>
-            <div>Country: {props.filmInfo.Country}</div>
-            <div>Awards: {props.filmInfo.Awards}</div>
-            {/*<ul>Ratings:*/}
-            {/*    <li>Source: {props.filmInfo.Ratings[0].Source},*/}
-            {/*        Value: {props.filmInfo.Ratings[0].Value}*/}
-            {/*    </li>*/}
-            {/*    <li>*/}
-            {/*        Source: {props.filmInfo.Ratings[1].Source},*/}
-            {/*        Value: {props.filmInfo.Ratings[1].Value}*/}
-            {/*    </li>*/}
-            {/*    <li>*/}
-            {/*        Source: {props.filmInfo.Ratings[2].Source},*/}
-            {/*        Value: {props.filmInfo.Ratings[2].Value}*/}
-            {/*    </li>*/}
-            {/*</ul>*/}
-            <div>Metascore: {props.filmInfo.Metascore}</div>
-            <div>imdbRating: {props.filmInfo.imdbRating}</div>
-            <div>imdbVotes: {props.filmInfo.imdbVotes}</div>
-            <div>imdbID: {props.filmInfo.imdbID}</div>
-            <div>Type: {props.filmInfo.Type}</div>
-            <div>DVD: {props.filmInfo.DVD}</div>
-            <div>BoxOffice: {props.filmInfo.BoxOffice}</div>
-            <div>Production: {props.filmInfo.Production}</div>
-            <div>Website: {props.filmInfo.Website}</div>
-            <div>Plot: {props.filmInfo.Plot}</div>
+        <div className={s.descriptionWrapper}>
+            <div>
+                <span className={s.item}>Title: </span>
+                <span>{props.filmInfo.Title}</span>
+            </div>
+            <div>
+                <span className={s.item}>Year: </span>
+                <span>{props.filmInfo.Year}</span>
+            </div>
+            <div>
+                <span className={s.item}>Rated: </span>
+                <span>{props.filmInfo.Rated}</span>
+            </div>
+            <div>
+                <span className={s.item}>Released: </span>
+                <span>{props.filmInfo.Released}</span>
+            </div>
+            <div>
+                <span className={s.item}>Runtime: </span>
+                <span>{props.filmInfo.Runtime}</span>
+            </div>
+            <div>
+                <span className={s.item}>Genre: </span>
+                <span>{props.filmInfo.Genre}</span>
+            </div>
+            <div>
+                <span className={s.item}>Director: </span>
+                <span>{props.filmInfo.Director},</span>
+            </div>
+            <div>
+                <span className={s.item}>Writer: </span>
+                <span>{props.filmInfo.Writer}</span>
+            </div>
+            <div>
+                <span className={s.item}>Language: </span>
+                <span>{props.filmInfo.Language}</span>
+            </div>
+            <div>
+                <span className={s.item}>Country: </span>
+                <span>{props.filmInfo.Country}</span><
+                /div>
+            <div>
+                <span className={s.item}>Awards: </span>
+                <span>{props.filmInfo.Awards}</span>
+            </div>
+            <div>
+                <span className={s.item}>Metascore: </span>
+                <span>{props.filmInfo.Metascore}</span>
+            </div>
+            <div>
+                <span className={s.item}>imdbRating: </span>
+                <span>{props.filmInfo.imdbRating}</span>
+            </div>
+            <div>
+                <span className={s.item}>imdbVotes: </span>
+                <span>{props.filmInfo.imdbVotes}</span>
+            </div>
+            <div>
+                <span className={s.item}>imdbID: </span>
+                <span>{props.filmInfo.imdbID}</span>
+            </div>
+            <div>
+                <span className={s.item}>Type: </span>
+                <span>{props.filmInfo.Type}</span>
+            </div>
+            <div>
+                <span className={s.item}>DVD: </span>
+                <span>{props.filmInfo.DVD}</span>
+            </div>
+            <div>
+                <span className={s.item}>BoxOffice: </span>
+                <span>{props.filmInfo.BoxOffice}</span>
+            </div>
+            <div>
+                <span className={s.item}>Production: </span>
+                <span>{props.filmInfo.Production}</span>
+            </div>
+            <div>
+                <span className={s.item}>Website: </span>
+                <span>{props.filmInfo.Website}</span>
+            </div>
+            <div>
+                <span className={s.item}>Plot: </span>
+                <span>{props.filmInfo.Plot}</span>
+            </div>
         </div>
     )
 }

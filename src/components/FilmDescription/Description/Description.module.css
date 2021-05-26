@@ -1,0 +1,9 @@
+.descriptionWrapper {
+    background-color: azure;
+    width: 600px;
+}
+
+.item{
+    font-weight: bold;
+    margin-bottom: 50px;
+}
