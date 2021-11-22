@@ -19,6 +19,7 @@ class FilmDescriptionContainer extends React.Component {
 let mapStateToProps = (state) => (
     {
         filmInfo: state.search.filmInfo,
+        history: state.search.history,
     }
 )
 

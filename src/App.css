@@ -1,12 +1,15 @@
 .app-wrapper {
     display: grid;
     grid-template-areas:
-  'h '
-  'c';
-    grid-template-rows: 48px 1fr;
-    grid-template-columns: 10fr;
+  'h'
+  'c'
+  'f';
+    grid-template-rows: 50px minmax(500px,auto) 50px;
     grid-gap: 10px;
 }
-.app-wrapper-content {
+
+.content-wrapper{
     grid-area: c;
+    font-family: 'Work Sans', sans-serif;
+
 }

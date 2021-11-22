@@ -1,0 +1,27 @@
+.cv {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-column-gap: 10px;
+}
+
+.cv h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.cv h2 {
+    margin-left: 10px;
+}
+
+.cv h3 {
+    margin-left: 20px;
+}
+
+.personalInformation {
+    border: 1px solid black;
+
+}
+
+.experienceAndEducation {
+    border: 1px solid red;
+}

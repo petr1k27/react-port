@@ -26,7 +26,8 @@ let initialState =  {
         Production: null,
         Website: null,
         Response: null,
-    }
+    },
+    history: [],
 }
 
 const searchReducer = (state = initialState, action) => {
@@ -34,7 +35,8 @@ const searchReducer = (state = initialState, action) => {
         case SET_FILM_INFO: {
             return {
                 ...state,
-                filmInfo: action.filmInfo
+                filmInfo: action.filmInfo,
+                history: [...state.history, action.filmInfo.Title]
             }
         }
         default:

@@ -1,0 +1,58 @@
+.header{
+    grid-area: h;
+    background-color: #ffffff;
+    padding-top: 10px;
+    box-shadow: 0 0 10px rgb(66, 66, 66);
+}
+
+.headerContent {
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;
+    grid-template-rows: 50px;
+    grid-column-gap: 100px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu {
+    margin-left: 100px;
+}
+
+.menu li{
+    display: inline;
+    margin-right: 20px;
+    padding: 0 10px;
+}
+.menu li a {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.menu li a:hover {
+    border-bottom: 3px solid black;
+}
+
+.menu li a:link, a:visited {
+    text-decoration: none;
+}
+
+.socialLogos {
+    margin-left: 100px;
+}
+
+.socialLogos ul li {
+    display: inline;
+    padding-left: 20px;
+}
+
+.socialLogo {
+    width: 32px;
+}
