@@ -9,9 +9,9 @@ const CV = () => {
                     <h3>Beginner Front-end developer</h3>
                 </div>
                 <div className={s.contactInfo}>
-                    Adress: Wrocław, Spiżowa 10/18<br/>
-                    Phone number: +48 793-736-708<br/>
-                    Email: petr.1k2794@gmail.com<br/>
+                    <strong>Adress:</strong> Wrocław, Spiżowa 10/18<br/>
+                    <strong>Phone number:</strong> +48 793-736-708<br/>
+                    <strong>Email:</strong> petr.1k2794@gmail.com<br/>
                 </div>
 
                 {/*<h3>Skills</h3>*/}
