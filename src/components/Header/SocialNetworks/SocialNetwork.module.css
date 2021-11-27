@@ -1,0 +1,17 @@
+.socialLogos {
+    margin-left: 100px;
+}
+
+ul.snList {
+    margin: 0;
+    padding-left: 250px;
+}
+
+ul.snList li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.socialLogo {
+    width: 32px;
+}

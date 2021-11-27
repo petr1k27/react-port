@@ -1,4 +1,14 @@
 .footer {
-    grid-area: f;
-    border-top: 1px solid black;
+    grid-area: footer;
+    height: 50px;
+    background-color: #20232a;
+    text-align: right;
+    color: #00d8ff;
+    margin-top: auto;
 }
+
+s.reactLogo {
+    display: inline-block;
+}
+
+

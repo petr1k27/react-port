@@ -1,15 +1,12 @@
 .app-wrapper {
+    overflow: hidden;
     display: grid;
-    grid-template-areas:
-  'h'
-  'c'
-  'f';
-    grid-template-rows: 50px minmax(500px,auto) 50px;
-    grid-gap: 10px;
+    grid-template-areas: 'header' 'content' 'footer';
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .content-wrapper{
-    grid-area: c;
-    font-family: 'Work Sans', sans-serif;
-
+    grid-area: content;
 }

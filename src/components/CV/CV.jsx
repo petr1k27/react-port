@@ -1,33 +1,62 @@
 import s from './CV.module.css'
 
-const CV = (props) => {
+const CV = () => {
     return (
         <div className={s.cv}>
             <div className={s.personalInformation}>
-                <h2>PERSONAL</h2>
-                <h3>Name</h3> Piotr Shumski
-                <h3>Adress</h3> Spiżowa 10/18 Wrocław
-                <h3>Phone number</h3> 793-736-708
-                <h3>Email</h3> petr.1k2794@gmail.com
+                <div className={s.name}>
+                    <h1>Piotr Shumski</h1>
+                    <h3>Beginner Front-end developer</h3>
+                </div>
+                <div className={s.contactInfo}>
+                    Adress: Wrocław, Spiżowa 10/18<br/>
+                    Phone number: +48 793-736-708<br/>
+                    Email: petr.1k2794@gmail.com<br/>
+                </div>
 
-                <h2>Languages</h2>
-                <h3>English: * * </h3>
-                <h3>Polish: * </h3>
-                <h3>Russian: * * * * * </h3>
+                {/*<h3>Skills</h3>*/}
+                {/*HTML<br/>*/}
+                {/*CSS(Flexbox, Grid,<br/>*/}
+                {/*JS<br/>*/}
+                {/*React.JS<br/>*/}
 
-                <h2>Skills</h2>
-                <h3>HTML</h3>
-                <h3>CSS</h3>
-                <h3>JS</h3>
-                <h3>React.JS</h3>
-
-                <h2>Interests</h2>
-                <h3>Coding</h3>
-                <h3>Skydiving</h3>
-                <h3>Space and astrophoto</h3>
+                {/*<h3>Interests</h3>*/}
+                {/*Coding<br/>*/}
+                {/*Skydiving<br/>*/}
+                {/*Space and astrophoto<br/>*/}
             </div>
-            <div className={s.experienceAndEducation}>
-                yoyoyo
+            <div className={s.skills}>
+                <div className={s.title}><h3>Skills</h3></div>
+                <div>
+                    <div className={s.skillItem}><strong>HTML</strong></div>
+                    <div className={s.skillItem}><strong>CSS</strong></div>
+                    <div className={s.skillItem}><strong>JS</strong></div>
+                    <div className={s.skillItem}><strong>React</strong></div>
+                    <div className={s.skillItem}><strong>Flex</strong></div>
+                    <div className={s.skillItem}><strong>Grid</strong></div>
+                    <div className={s.skillItem}><strong>Redux</strong></div>
+                    <div className={s.skillItem}><strong>Thunk</strong></div>
+                    <div className={s.skillItem}><strong>REST api</strong></div>
+                    <div className={s.skillItem}><strong>REST api</strong></div>
+                    <div className={s.skillItem}><strong>REST api</strong></div>
+                    <div className={s.skillItem}><strong>REST api</strong></div>
+                    <div className={s.skillItem}><strong>REST api</strong></div>
+                    <div className={s.skillItem}><strong>REST api</strong></div>
+                    <div className={s.skillItem}><strong>REST api</strong></div>
+                    <div className={s.skillItem}><strong>REST api</strong></div>
+                    <div className={s.skillItem}><strong>REST api</strong></div>
+                    <div className={s.skillItem}><strong>REST api</strong></div>
+                    <div className={s.skillItem}><strong>REST api</strong></div>
+                    <div className={s.skillItem}><strong>REST api</strong></div>
+                    <div className={s.skillItem}><strong>REST api</strong></div>
+                </div>
+
+            </div>
+            <div className={s.languages}>
+                <div className={s.title}><h3>Languages</h3></div>
+                <div className={s.item}><strong>English</strong><br/>A2-B1</div>
+                <div className={s.item}><strong>Polish</strong><br/>A1</div>
+                <div className={s.item}><strong>Russian</strong><br/>C2</div>
             </div>
         </div>
     )

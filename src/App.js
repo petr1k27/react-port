@@ -1,26 +1,22 @@
 import './App.css';
 import FilmDescriptionContainer from "./components/FilmDescription/FilmDescriptionContainer";
-import HeaderContainer from "./components/Header/HeaderContainer";
+import Header from "./components/Header/Header";
 import CV from "./components/CV/CV";
-import {BrowserRouter, Route, Routes,} from "react-router-dom";
+import {Route, Routes,} from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 
 function App() {
     return (
-        <BrowserRouter>
             <div className="app-wrapper">
-                <HeaderContainer/>
-
-                <div className="content-wrapper">
+                <Header/>
+                <main className="content-wrapper">
                     <Routes>
                         <Route path="/" element={<CV/>}/>
                         <Route path="/portfolio" element={<FilmDescriptionContainer/>}/>
                     </Routes>
-                </div>
-
+                </main>
                 <Footer/>
             </div>
-        </BrowserRouter>
     );
 }
 
