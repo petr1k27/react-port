@@ -4,8 +4,13 @@ import React from "../../assets/react.png"
 const Footer = () => {
     return (
         <div className={s.footer}>
-            <strong>Based on REACT</strong>
-                <img src={React} alt={"React"} />
+            <div className={s.react}>
+                <div className={s.basedOn}>
+                    <strong>Based on React.JS</strong></div>
+                <div>
+                    <img src={React} alt={"React"} />
+                </div>
+            </div>
         </div>
     )
 }

@@ -1,14 +1,22 @@
 .footer {
     grid-area: footer;
-    height: 50px;
+    height: 48px;
     background-color: #20232a;
-    text-align: right;
     color: #00d8ff;
     margin-top: auto;
 }
 
-s.reactLogo {
-    display: inline-block;
+.react{
+    display: grid;
+    grid-template-columns: 1fr 48px;
+    grid-column-gap: 10px;
 }
+
+.basedOn {
+    text-align: right;
+    padding-top: 14px;
+
+}
+
 
 

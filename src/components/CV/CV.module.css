@@ -5,7 +5,7 @@
 
 .cv {
     display: grid;
-    grid-template-rows: 300px 1fr;
+    grid-template-rows: 180px 1fr;
 }
 
 .personalInformation {
@@ -13,46 +13,21 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.name {
+.careerObjective {
     padding: 10px 0 0 30px;
+}
+.career{
+    margin-top: 10px;
 }
 
 .contactInfo {
     padding-top: 10px;
     padding-right: 30px;
     text-align: right;
-    align-items: flex-end;
 }
 
-.skills {
-    display: grid;
-    grid-template-rows: 40px 1fr;
-    margin: 0 30px 20px 30px;
-    align-items: center;
-}
-
-.skillItem {
-    display: inline-block;
-    align-items: center;
-    width: fit-content;
-    height: 1.5em;
-    padding: 2px 10px;
-    margin: 10px 5px 0 0;
-    border-radius: 8px;
-    background-color: #7a6688;
-
-}
-
-.skillItem strong {
-    color: #ffffff;
-}
-
-.languages {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 40px 40px;
-    grid-gap: 5px;
-    margin: 0 30px 20px 30px;
+.contactIcon {
+    height: 1.2em;
 }
 
 .title{
@@ -62,6 +37,48 @@
     grid-column: 1/-1;
     border-bottom: 2px solid black;
 }
+
+.skills {
+    display: grid;
+    grid-template-rows: 40px 1fr;
+    margin: 0 30px 20px 30px;
+    align-items: center;
+    border-top: 2px solid black;
+}
+
+.skillItem {
+    display: inline-block;
+    align-items: center;
+    width: fit-content;
+    height: 1.5em;
+    padding: 10px 10px;
+    margin: 10px 5px 0 5px;
+    border-radius: 8px;
+
+}
+.hardSkill {
+    background-color: #7a6688;
+}
+
+.softSkill {
+    background-color: #00d8ff;
+}
+
+.skillItem strong {
+    color: #ffffff;
+}
+
+.languages {
+    border-top: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40px 40px;
+    grid-gap: 5px;
+    padding-bottom: 10px;
+    margin: 0 30px 0 30px;
+}
+
+
 .item {
     text-align: center;
     color: #7a6688
@@ -70,5 +87,36 @@
     color: #000000
 }
 
+.education {
+    border-top: 2px solid black;
+    margin: 0 30px 5px 30px;
+    padding-bottom: 10px;
+}
 
+.edEstablishment {
+    margin-top: 5px;
+}
 
+.terms {
+    font-size: .9em;
+    color: rgba(0, 0, 0, 0.7);
+    font-style: italic;
+}
+
+.itEducation {
+    border-top: 2px solid black;
+    margin: 0 30px 5px 30px;
+    padding-bottom: 10px;
+}
+
+.source {
+    margin: 10px 0 0 0;
+}
+
+.itEducation a {
+    color: black;
+    text-decoration: none;
+}
+.itEducation a:hover {
+    text-decoration: underline;
+}
